@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tocador en puro CSS</title>
+</head>
+<body>
+
+	<div class="contenedorCirculosPiso"></div>
+
+	<div class="tocadorContenedor">
+		
+		<div class="tocador">
+
+			<div class="central">
+
+				<div class="luzCaja">
+							
+					<div class="circulo"></div>
+
+					<div class="luzBoton"></div>
+
+					<div class="circulo"></div>
+
+				</div>
+						
+				<div class="lampara">
+
+					<div class="circuloTop">
+
+						<div class="cirInterior"></div>
+						
+					</div>
+
+					<div class="vidrio">
+
+						<div class="vidrioInterior"></div>
+						
+					</div>
+					
+				</div>
+
+				<div class="espejo">
+
+					<div class="izq"></div>
+
+					<div class="der"></div>
+					
+				</div>
+
+				<div class="lampara">
+
+					<div class="circuloTop">
+
+						<div class="cirInterior"></div>
+						
+					</div>
+
+					<div class="vidrio">
+
+						<div class="vidrioInterior"></div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+				
+			<div class="rectangulo"></div>
+			
+		</div>
+
+	</div>
+
+	<div class="mueble">
+
+		<div class="marmol"></div>
+
+		<div class="pata"></div>
+
+		<div class="pata"></div>
+
+		<div class="pata"></div>
+
+		<div class="left">
+
+			<div class="cajon">
+
+				<div class="manija"></div>
+				
+			</div>
+			
+		</div>
+
+		<div class="cajonR"></div>
+
+		<div class="marmolR"></div>
+
+		<div class="manijaR"></div>
+
+		<div class="pataR"></div>
+
+		<div class="pataRR"></div>
+
+		<div class="cajones">
+
+			<div class="cajon1">
+
+				<div class="manijaC"></div>
+				
+			</div>
+
+			<div class="cajon2">
+
+				<div class="manijaC"></div>
+				
+			</div>
+
+			<div class="cajon3">
+
+				<div class="manijaC"></div>
+				
+			</div>
+			
+		</div>
+
+		<div class="marmolT"></div>
+
+		<div class="marmolTop"></div>
+		
+	</div>
+
+
+	<style>
+
+		.marmolTop{
+
+			width: 395px;
+
+			min-height: 10px;
+
+			border: 2px solid #f2f2f2;
+
+			background: beige;
+
+			border-radius: 10px;
+
+			position: absolute;
+
+			top: 10px;
+
+			left: 10px;
+		}
+
+		.manijaC{
+
+			width: 10px;
+
+			min-height: 10px;
+
+			border: 2px solid black;
+
+			border-radius: 10px;
+		}
+
+		.cajon1,.cajon2,.cajon3{
+
+			border: 4px solid beige;
+
+			height: 20px;
+
+			width: 80px;
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: center;
+
+		}
+
+		.cajones{
+
+			width: 380px;
+
+			min-height: 40px;
+
+			background: #BA8992;
+
+			position: absolute;
+
+			top: 20px;
+
+			left: 20px;
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: space-around;
+
+		}
+
+		.pataRR{
+
+			width: 10px;
+
+			min-height: 90px;
+
+			background: beige;
+
+			position: absolute;
+
+			border: 2px solid black;
+
+			border-top: 0.0002px solid black;
+
+			border-bottom: 10px solid black;
+
+			left: 380px;
+
+			top: 147px;
+
+		}
+
+		.pataR{
+
+			width: 10px;
+
+			min-height: 90px;
+
+			background: beige;
+
+			position: absolute;
+
+			border: 2px solid black;
+
+			border-top: 0.0002px solid black;
+
+			border-bottom: 10px solid black;
+
+			left: 320px;
+
+			top: 147px;
+
+		}
+
+		.manijaR{
+
+			width: 15px;
+
+			min-height: 10px;
+
+			background: #BA8992;
+
+			border: 2px solid black;
+
+			border-radius: 10px;
+
+			position: absolute;
+
+			left: 352px;
+
+			top: 100px;
+
+		}
+
+		.cajonR{
+
+			width: 100px;
+
+			min-height: 100px;
+
+			background: #BA8992;
+
+			border: 0.002px solid black;
+
+			border-bottom-right-radius: 25px;
+
+			position: absolute;
+
+			top: 47px;
+
+			left: 312px;
+
+		}
+
+		.marmolR{
+
+			width: 120px;
+
+			min-height: 35px;
+
+			background: #8A9493;
+
+			position: absolute;
+
+			border: 0.002px solid black;
+
+			border-top-right-radius: 1000px;
+
+			border-bottom-right-radius: 1000px;
+
+			top: 45px;
+
+			left: 300px;
+
+		}
+
+		.pata{
+
+			width: 10px;
+
+			min-height: 90px;
+
+			background: beige;
+
+			position: absolute;
+
+			border: 2px solid black;
+
+			border-top: 0.0002px solid black;
+
+			border-bottom: 10px solid black;
+
+		}
+
+		.pata:nth-child(2){
+			left: 25px;
+			top: 148px;
+		}
+
+		.pata:nth-child(3){
+			left: 80px;
+			top: 148px;
+		}
+
+		.marmol{
+
+			width: 120px;
+
+			min-height: 35px;
+
+			background: #8A9493;
+
+			position: absolute;
+
+			border: 0.002px solid black;
+
+			border-top-left-radius: 1000px;
+
+			border-bottom-left-radius: 1000px;
+
+			top: 45px;
+
+		}
+
+		.mueble .left .cajon .manija{
+
+			width: 15px;
+
+			min-height: 10px;
+
+			background: #BA8992;
+
+			border: 2px solid black;
+
+			border-radius: 10px;
+
+			position: absolute;
+
+			left: 45px;
+
+			top: 100px;
+
+		}
+
+		.mueble .left .cajon{
+
+			margin-top: 50px;
+
+			margin-left: 5px;
+
+			width: 100px;
+
+			min-height: 100px;
+
+			background: #BA8992;
+
+			border: 0.002px solid black;
+
+			border-bottom-left-radius: 25px;
+
+		}
+
+		.mueble{
+
+			width: 450px;
+
+			min-height: 300px;
+
+			position: absolute;
+
+			bottom: 100px;
+
+			left: 37%;
+
+		
+		}
+
+		body{
+
+			background: #9F9FA0;
+
+			overflow-y: hidden;
+
+			margin: 0;
+
+			padding: 0;
+
+		}
+
+		.cir{
+
+			background: rgba(31,31,31,0.3);
+
+			border: solid 0.01px #000;
+
+			border-radius: 100px;
+
+			width: 20px;
+
+			min-height: 90px;
+
+			margin-right: 5px;
+
+			margin-bottom: 10px;
+
+		}
+
+		.contenedorCirculosPiso{
+
+			position: absolute;
+
+			display: flex;
+
+			flex-wrap: wrap;
+
+			margin-left: 20px;
+
+			margin-top: 10px;
+
+		}
+
+		.tocadorContenedor{
+
+			display: flex;
+
+			justify-content: center;
+
+		}
+
+		.tocador{
+
+			position: absolute;
+
+			width: 100%;
+
+			min-height: 75%;
+
+			background: #c96b00;
+
+			display: flex;
+
+			align-items: flex-end;
+
+			justify-content: center;
+
+		}
+
+		.rectangulo{
+
+			background: beige;
+
+			width: 100%;
+
+			min-height: 25px;
+
+		}
+
+		.central{
+
+			min-height: 100%;
+
+			width: 600px;
+
+			position: absolute;
+
+			display: flex;
+
+			align-items: flex-start;
+
+			justify-content: space-between;
+
+		}
+
+		.luzCaja{
+
+			background: beige;
+
+			min-height: 60px;
+
+			width: 45px;
+
+			justify-self: flex-end;
+
+			align-self: center;
+
+			margin-left: 10px;
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: space-between;
+
+		}
+
+		.luzBoton{
+
+			width: 20px;
+
+			height: 20px;
+
+			border: solid 2px black;
+
+		}
+
+		.circulo{
+
+			background: gray;
+
+			width: 7px;
+
+			height: 7px;
+
+			border: solid 0.01px beige;
+
+			border-radius: 7px;
+
+			margin-left: 2px;
+
+			margin-right: 2px;
+
+		}
+
+		.lampara, .espejo{
+			margin-top: 20px;
+		}
+
+		.espejo{
+
+			width: 250px;
+
+			min-height: 250px;
+
+			border: solid 5px beige;
+
+			border-radius: 300px;
+
+			overflow-y: hidden;
+
+			background: #733f00;
+
+		}
+
+		.izq{
+
+			width: 100px;
+
+			height: 250px;
+
+			background: #839A9A;
+
+		}
+
+		.circuloTop{
+
+			background: brown;
+
+			width: 40px;
+
+			min-height: 40px;
+
+			border: solid 0.1px beige;
+
+			border-radius: 100px;
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: center;
+
+		}
+
+		.cirInterior{
+			
+			background: beige;
+
+			width: 20px;
+
+			min-height: 20px;
+
+			border: solid 0.01px #000;
+
+			border-radius: 100px;
+			
+		}
+
+		.vidrioInterior{
+
+			background: #f2f2f2;
+
+			width: 40px;
+
+			min-height: 60px;
+
+			border: solid 0.01px #000;
+
+			border-radius: 100px;
+
+			position: relative;
+
+			bottom: -30px;
+
+		}
+
+
+		.vidrio{
+
+			overflow: hidden;
+
+			position: absolute;
+
+			top: 15px;
+
+
+		}
+
+		.luzBoton:hover {
+		    cursor: pointer;
+		}
+
+
+	</style>
+
+	<script>
+		
+		let i;
+
+		for (i = 0; i < 2000; i++) {
+
+			var cir = document.createElement("div");
+			cir.setAttribute("class", "cir");
+			document.getElementsByClassName("contenedorCirculosPiso")[0].appendChild(cir);
+
+		}
+
+		document.getElementsByClassName("pata")[0].remove();
+
+		document.getElementsByClassName("luzBoton")[0].addEventListener("click", function(){
+
+			if(document.getElementsByClassName("tocador")[0].style.background == "rgb(79, 59, 4)"){
+
+				document.getElementsByClassName("tocador")[0].style.background = "#c96b00";
+
+			}else{
+
+				document.getElementsByClassName("tocador")[0].style.background = "rgb(79, 59, 4)";
+
+			}
+
+		});
+		
+	</script>
+	
+</body>
+</html>
